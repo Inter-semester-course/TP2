@@ -8,6 +8,8 @@ namespace TP2
 {
     internal static class Program
     {
+
+        public static Memoire MemoireClients = new Memoire();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

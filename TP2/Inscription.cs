@@ -46,6 +46,17 @@ namespace TP2
                 !(String.IsNullOrEmpty(textBoxPassword.Text)) &&
                 !(String.IsNullOrEmpty(textBoxConfirmation.Text)))
             {
+                string genre = GetGenreSelection();
+
+                Client nouveauClient = new Client(
+                        nom.Text,
+                        prenom.Text,
+                        mail.Text,
+                        textBoxPassword.Text,
+                        genre
+                    );
+
+                Program.MemoireClients.ajouterClient(nouveauClient);
                 MessageBox.Show("Votre Compte a bien ete Cree!");
             }
             else
@@ -53,7 +64,12 @@ namespace TP2
                 MessageBox.Show("Vous devez tous remplir et Verifier votre mot de passe!");
             }
         }
-
+        public string GetGenreSelection()
+        {
+            if (radioButton1.Checked) return "Homme";
+            if (radioButton2.Checked) return "Femme";
+            return "Non spécifié";
+        }
         private void button1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -64,6 +80,18 @@ namespace TP2
                     !(String.IsNullOrEmpty(textBoxPassword.Text)) &&
                     !(String.IsNullOrEmpty(textBoxConfirmation.Text)))
                 {
+
+                    string genre = GetGenreSelection();
+
+                    Client nouveauClient = new Client(
+                        nom.Text,
+                        prenom.Text,
+                        mail.Text,
+                        textBoxPassword.Text,
+                        genre
+                    );
+
+                    Program.MemoireClients.ajouterClient(nouveauClient);
                     MessageBox.Show("Votre Compte a bien ete Cree!");
                 }
                 else

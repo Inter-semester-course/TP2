@@ -31,8 +31,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pass = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,19 +65,19 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Email";
             // 
-            // textBox5
+            // pass
             // 
-            this.textBox5.Location = new System.Drawing.Point(75, 221);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(344, 20);
-            this.textBox5.TabIndex = 12;
+            this.pass.Location = new System.Drawing.Point(75, 221);
+            this.pass.Name = "pass";
+            this.pass.Size = new System.Drawing.Size(344, 20);
+            this.pass.TabIndex = 12;
             // 
-            // textBox1
+            // email
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 168);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 20);
-            this.textBox1.TabIndex = 11;
+            this.email.Location = new System.Drawing.Point(75, 168);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(344, 20);
+            this.email.TabIndex = 11;
             // 
             // button2
             // 
@@ -88,6 +88,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Creer un Compte";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -98,6 +99,8 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Se Connecter";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.button1_KeyDown);
             // 
             // Connexion
             // 
@@ -109,8 +112,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pass);
+            this.Controls.Add(this.email);
             this.Name = "Connexion";
             this.Text = "Connexion";
             this.ResumeLayout(false);
@@ -123,8 +126,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox pass;
+        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
     }
