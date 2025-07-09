@@ -1,0 +1,12 @@
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\bin\Debug\TP2.exe.config
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\bin\Debug\TP2.exe
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\bin\Debug\TP2.pdb
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.csproj.SuggestedBindingRedirects.cache
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.Connexion.resources
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.Inscription.resources
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.Properties.Resources.resources
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.csproj.GenerateResource.cache
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.csproj.CoreCompileInputs.cache
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.exe
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.pdb
+D:\Cours Mr Mamitiana\pratique\TP2\TP2\obj\Debug\TP2.csproj.AssemblyReference.cache
