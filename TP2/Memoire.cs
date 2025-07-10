@@ -19,5 +19,10 @@ namespace TP2
         {
             return clients;
         }
+
+        public bool EmailExiste(string mail)
+        {
+            return clients.Any(c => c.email == mail);
+        }
     }
 }

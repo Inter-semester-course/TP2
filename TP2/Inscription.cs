@@ -46,6 +46,11 @@ namespace TP2
                 !(String.IsNullOrEmpty(textBoxPassword.Text)) &&
                 !(String.IsNullOrEmpty(textBoxConfirmation.Text)))
             {
+                if (Program.MemoireClients.EmailExiste(mail.Text))
+                {
+                    MessageBox.Show("Un compte avec cet email existe déjà.");
+                    return;
+                }
                 string genre = GetGenreSelection();
 
                 Client nouveauClient = new Client(
@@ -80,6 +85,11 @@ namespace TP2
                     !(String.IsNullOrEmpty(textBoxPassword.Text)) &&
                     !(String.IsNullOrEmpty(textBoxConfirmation.Text)))
                 {
+                    if (Program.MemoireClients.EmailExiste(mail.Text))
+                    {
+                        MessageBox.Show("Un compte avec cet email existe déjà.");
+                        return;
+                    }
 
                     string genre = GetGenreSelection();
 
